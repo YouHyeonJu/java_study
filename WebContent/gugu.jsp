@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <% 
-    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,20 +12,18 @@
 </head>
 <body>
 <table class="table table-bordered table-hover">
-<tr>
-<% for(int i=2;i<=9;i++){%>
-<td><%=i%>단</td>
-<% }%>
-</tr>
-<tr>
-<% for(int i=1;i<=9;i++){%>
-<tr>
-	<%for(int j=2;j<=9;j++){ %>
-<td><%=j%>X<%=i%>=<%=i*j %></td>
-	<%}%>
-</tr>
-<%}%>
-</tr>
+ <tr>
+   <% for(int i=2;i<=9;i++){ %>
+     <td><%=i%>단</td>
+   <% } %>
+ </tr>
+ <% for(int i=1;i<=9;i++) { %>
+ <tr>
+   <% for(int j=2;j<=9;j++){ %>
+     <td><%=j%>X<%=i%>=<%=i*j%></td>
+   <% } %>
+ </tr> 
+ <% } %> 
 </table>
 </body>
 </html>

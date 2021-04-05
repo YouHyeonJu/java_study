@@ -1,14 +1,13 @@
 package kr.gsm.model;
-
 public class MemberVO {
-	private int num;
-	private String id;
-	private String pass;
-	private String name;
-	private int age;
-	private String phone;
-	private String email;
-	//setter, getter method
+	   private int num;
+	   private String id;
+	   private String pass;
+	   private String name;
+	   private int age;
+	   private String phone;
+	   private String email;
+	   // setter, getter method
 	public int getNum() {
 		return num;
 	}
@@ -51,5 +50,10 @@ public class MemberVO {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+	@Override
+	public String toString() {
+		return "MemberVO [num=" + num + ", id=" + id + ", pass=" + pass + ", name=" + name + ", age=" + age + ", phone="
+				+ phone + ", email=" + email + "]";
+	}
+	   
 }
